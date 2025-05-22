@@ -1,3 +1,5 @@
+import { Link, useLocation } from "react-router-dom";
+
 function Home() {
   const stages = [
     {
@@ -27,7 +29,7 @@ function Home() {
 
         <img
           className="w-70  rounded-2xl mb-2"
-          src="https://gluwebdev.notion.site/image/attachment%3Af5cf500a-7b47-4b96-bbeb-5bff163355e2%3AlogoWhite.png?table=block&id=1eb69bb8-092d-8088-8389-edbee5fa9e88&spaceId=0216a67a-859e-4730-996f-5d51b31fa395&width=660&userId=&cache=v2"
+          src="/imges/whiteLogo.png"
           alt=""
         />
       </div>
@@ -59,11 +61,16 @@ function Home() {
         <p className="font-semibold w-40 h-60 bg-footer text-xl  p-2 rounded-xl">
           Staat jouw favoriete Arties bij ons in het schema kijk nu:
         </p>
+        <Link
+        to="/music"
+        >
+        
         <img
           className="rounded-xl h-50 w-50"
           src="/imges/schedule.png"
           alt="schedule"
         />
+        </Link>
       </div>
     </div>
   );

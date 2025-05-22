@@ -5,18 +5,16 @@ import {
   LocationIcon,
   DarkIcon,
 } from "./components/icons";
-import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 function Layout({ children }) {
   const location = useLocation();
-  const [activePage, setActivePage] = useState(location.pathname);
+  const activePage = location.pathname; // Always reflects the current route
 
   const navbar = [
     { name: "Home", path: "/", icon: <HomeIcon className="w-8 h-8" /> },
     { name: "Info", path: "/info", icon: <InfoIcon className="w-8 h-8" /> },
     { name: "Music", path: "/music", icon: <MusicIcon className="w-8 h-8" /> },
-
     {
       name: "Location",
       path: "/location",
@@ -25,7 +23,7 @@ function Layout({ children }) {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-gray-100">
       <header className=" text-white justify-end  flex gap-2 p-4">
         <div className=" rounded-full bg-black text-white border-1 font-bold text-sm  w-10 h-10 flex justify-center items-center"><DarkIcon className="fill-white w-8"/></div>
         <div className=" rounded h-full">
@@ -54,7 +52,6 @@ function Layout({ children }) {
               <li
                 className="relative"
                 key={item.name}
-                onClick={() => setActivePage(item.path)}
               >
                 <Link
                   to={item.path}
