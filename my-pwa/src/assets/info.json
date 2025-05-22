@@ -3,21 +3,21 @@
     "section": "algemeen_contact",
     "nl": {
       "title": "Algemeen & contact",
-      "description": "Het love u Festival is voor (nieuwe) studenten in de regio Utrecht en is een aanvulling op UIT.",
+      "voor wie": "Het love u Festival is voor (nieuwe) studenten in de regio Utrecht en is een aanvulling op UIT.",
       "adres": {
         "locatie": "Strijkviertel, Utrecht",
         "navigatieadres": "Strijkviertelweg, Utrecht"
       },
-      "datum_openingstijden": "Zaterdag 6 september 2025 - 12:00 tot 23:00 uur"
+      "datum openingstijden": "Zaterdag 6 september 2025 - 12:00 tot 23:00 uur"
     },
     "en": {
       "title": "General & Contact",
-      "description": "The love u Festival is for (new) students in the Utrecht region and is a supplement to UIT.",
+      "For who": "The love u Festival is for (new) students in the Utrecht region and is a supplement to UIT.",
       "adres": {
         "location": "Strijkviertel, Utrecht",
         "navigation_address": "Strijkviertelweg, Utrecht"
       },
-      "date_opening_hours": "Saturday, September 6, 2025 - 12:00 to 23:00"
+      "date opening hours": "Saturday, September 6, 2025 - 12:00 to 23:00"
     }
   },
   {
@@ -28,7 +28,7 @@
       "auto": "Je kunt een parkingticket aanschaffen. Parkeren kan op P+R Papendorp, volg hiervoor de borden 'P online ticket'. Heb je geen ticket van te voren gekocht? Dan kun je bij de parkeerwachter op locatie een parkeerticket aanschaffen (PIN ONLY). Let wel op: VOL=VOL",
       "ov": "Kom je met het openbaar vervoer naar Lief? Plan dan je trip via 9292.nl.",
       "shuttlebus": "Vanaf Utrecht Centraal kun je onze gratis shuttlebus richting het festivalterrein pakken. Je vindt deze bus op het centraal station aan de Mineurslaan. Volg de witte bordjes met zwarte pijlen én ' ❤️U Festival'. De bus rijdt tussen 12:00 uur & 19:00 uur richting het festival en vanaf 21:00 uur kun je weer instappen om richting het station te gaan.",
-      "taxi_kissride": "Navigeer naar Strijkviertel, De Meern (Utrecht). Volg de borden 'Kiss & Ride ❤️U Festival', zodra je in de buurt bent van het festivalterrein."
+      "taxi kissride": "Navigeer naar Strijkviertel, De Meern (Utrecht). Volg de borden 'Kiss & Ride ❤️U Festival', zodra je in de buurt bent van het festivalterrein."
     },
     "en": {
       "title": "Accessibility",
@@ -36,20 +36,10 @@
       "car": "You can purchase a parking ticket. Parking is available at P+R Papendorp, follow the signs 'P online ticket'. If you haven't bought a ticket in advance, you can buy one from the parking attendant on site (PIN ONLY). Note: FULL=FULL.",
       "public_transport": "Coming to Lief by public transport? Plan your trip via 9292.nl.",
       "shuttlebus": "From Utrecht Central you can take our free shuttle bus to the festival site. You will find this bus at the central station on Mineurslaan. Follow the white signs with black arrows and '❤️U Festival'. The bus runs between 12:00 & 19:00 to the festival and from 21:00 you can take it back to the station.",
-      "taxi_kissride": "Navigate to Strijkviertel, De Meern (Utrecht). Follow the signs 'Kiss & Ride ❤️U Festival' when you are near the festival site."
+      "taxi kissride": "Navigate to Strijkviertel, De Meern (Utrecht). Follow the signs 'Kiss & Ride ❤️U Festival' when you are near the festival site."
     }
   },
-  {
-    "section": "lockers",
-    "nl": {
-      "title": "Lockers",
-      "description": "Op het festivalterrein zijn kluisjes aanwezig waar je je spullen veilig kunt opbergen! Hier passen 3 à 4 jassen in. Goed om te weten: je kunt je kluisje gedurende de hele dag openen en sluiten zo vaak je wilt. Het is niet mogelijk om online een kluisje te reserveren."
-    },
-    "en": {
-      "title": "Lockers",
-      "description": "There are lockers on the festival grounds where you can safely store your belongings! 3 to 4 jackets fit in one. Good to know: you can open and close your locker as often as you want throughout the day. It is not possible to reserve a locker online."
-    }
-  },
+ 
   {
     "section": "faq",
     "nl": {
@@ -90,12 +80,14 @@
   {
     "section": "golden_glu",
     "nl": {
-      "title": "Golden-GLU",
-      "description": "Studenten van het GLU hebben tijdens het festival speciale privileges en zijn herkenbaar aan een gouden armbandje. Met dit gouden armbandje kunnen ze tijdens het festival gebruik maken van de gouden toiletten en met goud gemarkeerde bestelpunten aan de bars zonder in een rij te hoeven staan."
+      "title": "Overig",
+      "Golden GLU": "Studenten van het GLU hebben tijdens het festival speciale privileges en zijn herkenbaar aan een gouden armbandje. Met dit gouden armbandje kunnen ze tijdens het festival gebruik maken van de gouden toiletten en met goud gemarkeerde bestelpunten aan de bars zonder in een rij te hoeven staan.",
+       "Lockers": "Op het festivalterrein zijn kluisjes aanwezig waar je je spullen veilig kunt opbergen! Hier passen 3 à 4 jassen in. Goed om te weten: je kunt je kluisje gedurende de hele dag openen en sluiten zo vaak je wilt. Het is niet mogelijk om online een kluisje te reserveren."
     },
     "en": {
       "title": "Golden-GLU",
-      "description": "GLU students have special privileges during the festival and can be recognized by a golden wristband. With this wristband, they can use the golden toilets and gold-marked order points at the bars without having to stand in line."
+      "Golden GLU": "GLU students have special privileges during the festival and can be recognized by a golden wristband. With this wristband, they can use the golden toilets and gold-marked order points at the bars without having to stand in line.",
+      "Lockers": "There are lockers on the festival grounds where you can safely store your belongings! 3 to 4 jackets fit in one. Good to know: you can open and close your locker as often as you want throughout the day. It is not possible to reserve a locker online."
     }
   }
 ]
