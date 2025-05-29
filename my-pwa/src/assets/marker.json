@@ -1,27 +1,146 @@
 [
-    {
-        "position": [52.0757, 5.059],
-        "img": "marker_bar.svg",
-        "label": "Bar"
-    },
-    {
-        "position": [52.0756, 5.061],
-        "img": "marker_first_aid.svg",
-        "label": "First Aid"
-    },
-    {
-        "position": [52.07668, 5.05957],
-        "img": "marker_stage1_ponton.svg",
-        "label": "Stage 1"
-    },
-    {
-        "position": [52.0754, 5.058],
-        "img": "marker_food.svg",
-        "label": "Food"
-    },
-    {
-        "position": [52.0753, 5.063],
-        "img": "marker_locker.svg",
-        "label": "Lockers"
-    }
+  {
+    "position": [52.077, 5.05922],
+    "img": "marker_bar.svg",
+    "label": "Bar",
+    "size": "small"
+  },
+  {
+    "position": [52.07714, 5.05907],
+    "img": "marker_toilet.svg",
+    "label": "Toilet",
+    "size": "small"
+  },
+  {
+    "position": [52.076775, 5.060615],
+    "img": "marker_first_aid.svg",
+    "label": "First Aid",
+    "size": "small"
+  },
+  {
+    "position": [52.0767, 5.05957],
+    "img": "marker_stage1_ponton.svg",
+    "label": "Stage 1",
+    "size": "big"
+  },
+  {
+    "position": [52.07699, 5.05957],
+    "img": "marker_food.svg",
+    "label": "Food",
+    "size": "small"
+  },
+  {
+    "position": [52.076182, 5.0602],
+    "img": "marker_food.svg",
+    "label": "Food",
+    "size": "small"
+  },
+  {
+    "position": [52.076035, 5.06028],
+    "img": "marker_ice_cream.svg",
+    "label": "Ice cream",
+    "size": "small"
+  },
+  {
+    "position": [52.07648, 5.05947],
+    "img": "marker_ice_cream.svg",
+    "label": "Ice cream",
+    "size": "small"
+  },
+  {
+    "position": [52.07632, 5.06037],
+    "img": "marker_merchandise.svg",
+    "label": "Merchandise",
+    "size": "small"
+  },
+  {
+    "position": [52.0768, 5.05907],
+    "img": "marker_merchandise.svg",
+    "label": "Merchandise",
+    "size": "small"
+  },
+  {
+    "position": [52.07561, 5.0603],
+    "img": "marker_bar.svg",
+    "label": "Bar",
+    "size": "small"
+  },
+  {
+    "position": [52.07571, 5.06074],
+    "img": "marker_toilet.svg",
+    "label": "Toilet",
+    "size": "small"
+  },
+  {
+    "position": [52.07555, 5.06014],
+    "img": "marker_stage2_the_lake.svg",
+    "label": "Stage 2",
+    "size": "big"
+  },
+  {
+    "position": [52.07524, 5.06055],
+    "img": "marker_ice_cream.svg",
+    "label": "Ice cream",
+    "size": "small"
+  },
+  {
+    "position": [52.07514, 5.06032],
+    "img": "marker_merchandise.svg",
+    "label": "Merchandise",
+    "size": "small"
+  },
+  {
+    "position": [52.07501, 5.060354],
+    "img": "marker_stage3_the_club.svg",
+    "label": "Stage 3",
+    "size": "big"
+  },
+  {
+    "position": [52.074905, 5.06067],
+    "img": "marker_bar.svg",
+    "label": "Bar",
+    "size": "small"
+  },
+  {
+    "position": [52.074589, 5.060723],
+    "img": "marker_bar.svg",
+    "label": "Bar",
+    "size": "small"
+  },
+  {
+    "position": [52.07452, 5.06104],
+    "img": "marker_ice_cream.svg",
+    "label": "Ice cream",
+    "size": "small"
+  },
+  {
+    "position": [52.074175, 5.060812],
+    "img": "marker_toilet.svg",
+    "label": "Toilet",
+    "size": "small"
+  },
+  {
+    "position": [52.07427, 5.06107],
+    "img": "marker_stage4_hangar.svg",
+    "label": "Stage 3 ",
+    "size": "big"
+  },
+  {
+    "position": [52.076572, 5.05893],
+    "img": "marker_locker.svg",
+    "label": "Lockers",
+    "size": "medium"
+  },
+  {
+    "position": [52.07636, 5.05898],
+    "img": "marker_locker.svg",
+    "label": "Lockers",
+    "size": "medium"
+  },
+  {
+    "position": [52.075006, 5.05886],
+    "img": "marker_entrance_exit.svg",
+    "label": "Entrance/Exit",
+    "size": "entrance"
+  }
 ]

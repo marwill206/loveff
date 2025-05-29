@@ -22,9 +22,9 @@ function Layout({ children }) {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
-      <header className=" text-white justify-end  flex gap-2 p-4">
-        <div className=" rounded-full bg-black text-white border-1 font-bold text-sm  w-9 h-9 flex justify-center items-center"><DarkIcon className="fill-white w-6"/></div>
+    <div className="flex flex-col min-h-screen  bg-gray-100">
+      <header className=" text-white absolute right-0     justify-end z-1000 flex gap-2 m-3">
+        <div className=" rounded-full bg-black text-white font-bold text-sm  w-9 h-9 flex justify-center items-center"><DarkIcon className="fill-white w-6"/></div>
         <div className=" rounded h-full">
           <img
             className="w-8 h-8  rounded-full"

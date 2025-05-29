@@ -11,38 +11,46 @@ function Location() {
     [center[0] + delta, center[1] + delta],
   ];
 
-  
-  const createIcon = (img) =>
-    L.icon({
+  const createIcon = (img, size) => {
+    let iconSize = [25, 25];
+    if (size === "big") iconSize = [40, 40];
+    else if (size === "medium") iconSize = [30, 30];
+    else if (size === "entrance") iconSize = [80, 80];
+    // "small" or default stays [40, 40]
+
+    return L.icon({
       iconUrl: `/imges/${img}`,
-      iconSize: [40, 40], 
-      iconAnchor: [20, 20],
-      popupAnchor: [0, -40],
+      iconSize,
+      iconAnchor: [iconSize[0] / 2, iconSize[1] / 2],
+      popupAnchor: [0, -iconSize[1] / 2],
       className: "",
     });
+  };
 
   return (
-    <MapContainer
-      center={center}
-      zoom={17}
-      minZoom={17}
-      maxZoom={22}
-      className="h-150 w-full mx-auto"
-      style={{ background: "#14532d" }} // Tailwind's bg-green-700 hex
-      maxBounds={bounds}
-      maxBoundsViscosity={1.0}
-    >
-      <ImageOverlay url="/imges/kaart.svg" bounds={bounds} />
-      {markerData.map((marker, idx) => (
-        <Marker
-          key={idx}
-          position={marker.position}
-          icon={createIcon(marker.img)}
-        >
-          <Popup>{marker.label}</Popup>
-        </Marker>
-      ))}
-    </MapContainer>
+    <div className="h-screen">
+      <MapContainer
+        center={center}
+        zoom={17}
+        minZoom={17}
+        maxZoom={22}
+        className="h-full w-full mx-auto"
+        style={{ background: "#14532d" }} // Tailwind's bg-green-700 hex
+        maxBounds={bounds}
+        maxBoundsViscosity={1.0}
+      >
+        <ImageOverlay url="/imges/kaart.svg" bounds={bounds} />
+        {markerData.map((marker, idx) => (
+          <Marker
+            key={idx}
+            position={marker.position}
+            icon={createIcon(marker.img, marker.size)}
+          >
+            <Popup>{marker.label}</Popup>
+          </Marker>
+        ))}
+      </MapContainer>
+    </div>
   );
 }
 
