@@ -25,15 +25,15 @@ function Accordion({ title, children }) {
 function Info() {
   const lang = "nl";
   return (
-    <div>
+    <div className="p-4 mb-14">
       <div>
-        <h1 className="text-white mb-6 bg-graytext w-20 text-center rounded-2xl">
+        <h1 className="text-white mb-6 bg-graytext w-20  text-center rounded-2xl">
           >Info
         </h1>
       </div>
       {infoData.map((section) => (
-        <div key={section.section} className="mb-6">
-          <h2 className="text-xl font-bold mb-3">{section[lang].title}</h2>
+        <div key={section.section} className="mb-6 text-gray-700">
+          <h2 className="text-xl text-accent border-b-2 w-4/5 pb-2 font-bold mb-5">{section[lang].title}</h2>
           {Object.entries(section[lang])
             .filter(([key]) => key !== "title")
             .map(([key, value]) => {
@@ -42,6 +42,7 @@ function Info() {
                   <Accordion
                     key={key}
                     title={key.charAt(0).toUpperCase() + key.slice(1)}
+                    
                   >
                     <p>{value}</p>
                   </Accordion>
@@ -55,7 +56,8 @@ function Info() {
                     title={key.charAt(0).toUpperCase() + key.slice(1)}
                   >
                     {Object.entries(value).map(([k, v]) => (
-                      <p key={k}>
+                      <p key={k}
+                      >
                         {k.charAt(0).toUpperCase() + k.slice(1)}: {v}
                       </p>
                     ))}

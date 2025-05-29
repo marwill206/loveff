@@ -24,17 +24,17 @@ function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <header className=" text-white justify-end  flex gap-2 p-4">
-        <div className=" rounded-full bg-black text-white border-1 font-bold text-sm  w-10 h-10 flex justify-center items-center"><DarkIcon className="fill-white w-8"/></div>
+        <div className=" rounded-full bg-black text-white border-1 font-bold text-sm  w-9 h-9 flex justify-center items-center"><DarkIcon className="fill-white w-6"/></div>
         <div className=" rounded h-full">
           <img
-            className="w-9 h-9 rounded-full"
+            className="w-8 h-8  rounded-full"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAACgCAMAAADevrt1AAAAFVBMVEX///+uHCghRoulAADmysoAJH3KzdwUagNuAAAAqklEQVR4nO3PwRGDAAzAsACF/UfuCn3RO0eawJ5ji/l3wGuc9jjtcdrjtMdpj9Mepz1Oe5z2OO1x2uO0x2mP0x6nPU57nPY47XHa47THaY/THqc9Tnuc9sy1xXy2GAAAAAAAAAAAAAAA4HfPFnNvMecWTnuc9jjtcdrjtMdpj9Mepz1Oe5z2OO1x2uO0x2mP0x6nPU57nPY47XHa47THaY/THqc9Tnv2nH4BVOOeX8b66Q8AAAAASUVORK5CYII="
             alt=""
-          />
+          /> 
         </div>
       </header>
-      <main className="flex-grow p-4 mb-15">{children}</main>
-      <footer className=" fixed bottom-0  bg-transparent w-full flex justify-center">
+      <main className="">{children}</main>
+      <footer className=" fixed bottom-0 z-1000  bg-transparent w-full flex justify-center">
         <nav className="shadow bg-gray-100  h-15 w-70 z-100 mb-5 rounded-full flex justify-center items-center">
           <div className="w-70 h-10 pl-9 absolute ">
             <div

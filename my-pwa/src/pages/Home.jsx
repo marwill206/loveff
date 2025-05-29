@@ -20,7 +20,7 @@ function Home() {
     },
   ];
   return (
-    <div>
+    <div className="p-4 mb-18">
       <div className="text-white bg-graytext w-20 text-center rounded-2xl"> <h2>>Home</h2></div>
       <div className="flex flex-col-reverse  justify-center items-center">
         <h1 className="w-80 text-center bg- mb-2 text-3xl font-bold rounded-4xl p-2 bg-accent">

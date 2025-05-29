@@ -1,0 +1,27 @@
+[
+    {
+        "position": [52.0757, 5.059],
+        "img": "marker_bar.svg",
+        "label": "Bar"
+    },
+    {
+        "position": [52.0756, 5.061],
+        "img": "marker_first_aid.svg",
+        "label": "First Aid"
+    },
+    {
+        "position": [52.07668, 5.05957],
+        "img": "marker_stage1_ponton.svg",
+        "label": "Stage 1"
+    },
+    {
+        "position": [52.0754, 5.058],
+        "img": "marker_food.svg",
+        "label": "Food"
+    },
+    {
+        "position": [52.0753, 5.063],
+        "img": "marker_locker.svg",
+        "label": "Lockers"
+    }
+]
