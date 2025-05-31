@@ -8,7 +8,10 @@
         "locatie": "Strijkviertel, Utrecht",
         "navigatieadres": "Strijkviertelweg, Utrecht"
       },
-      "datum openingstijden": "Zaterdag 6 september 2025 - 12:00 tot 23:00 uur"
+      "datum openingstijden": {
+        "Zaterdag 6 september 2025": "9:00-00:00",
+        "Zondag 7 september 2025": "9:00-00:00"
+      }
     },
     "en": {
       "title": "General & Contact",
