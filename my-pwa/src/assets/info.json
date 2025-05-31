@@ -9,8 +9,8 @@
         "navigatieadres": "Strijkviertelweg, Utrecht"
       },
       "datum openingstijden": {
-        "Zaterdag 6 september 2025": "9:00-00:00",
-        "Zondag 7 september 2025": "9:00-00:00"
+        "Zaterdag 6 september 2025": "9:30-00:00",
+        "Zondag 7 september 2025": "9:30-00:00"
       }
     },
     "en": {
@@ -20,7 +20,10 @@
         "location": "Strijkviertel, Utrecht",
         "navigation_address": "Strijkviertelweg, Utrecht"
       },
-      "date opening hours": "Saturday, September 6, 2025 - 12:00 to 23:00"
+      "date opening hours": {
+        "Saturday 6 September 2025": "9:30-00:00",
+        "Sunday 7 September 2025": "9:30-00:00"
+      }
     }
   },
   {
@@ -37,12 +40,12 @@
       "title": "Accessibility",
       "bike": "There is a large free bicycle parking area where you can park your bike all day.",
       "car": "You can purchase a parking ticket. Parking is available at P+R Papendorp, follow the signs 'P online ticket'. If you haven't bought a ticket in advance, you can buy one from the parking attendant on site (PIN ONLY). Note: FULL=FULL.",
-      "public_transport": "Coming to Lief by public transport? Plan your trip via 9292.nl.",
+      "public transport": "Coming to Lief by public transport? Plan your trip via 9292.nl.",
       "shuttlebus": "From Utrecht Central you can take our free shuttle bus to the festival site. You will find this bus at the central station on Mineurslaan. Follow the white signs with black arrows and '❤️U Festival'. The bus runs between 12:00 & 19:00 to the festival and from 21:00 you can take it back to the station.",
       "taxi kissride": "Navigate to Strijkviertel, De Meern (Utrecht). Follow the signs 'Kiss & Ride ❤️U Festival' when you are near the festival site."
     }
   },
- 
+
   {
     "section": "faq",
     "nl": {
@@ -85,7 +88,7 @@
     "nl": {
       "title": "Overig",
       "Golden GLU": "Studenten van het GLU hebben tijdens het festival speciale privileges en zijn herkenbaar aan een gouden armbandje. Met dit gouden armbandje kunnen ze tijdens het festival gebruik maken van de gouden toiletten en met goud gemarkeerde bestelpunten aan de bars zonder in een rij te hoeven staan.",
-       "Lockers": "Op het festivalterrein zijn kluisjes aanwezig waar je je spullen veilig kunt opbergen! Hier passen 3 à 4 jassen in. Goed om te weten: je kunt je kluisje gedurende de hele dag openen en sluiten zo vaak je wilt. Het is niet mogelijk om online een kluisje te reserveren."
+      "Lockers": "Op het festivalterrein zijn kluisjes aanwezig waar je je spullen veilig kunt opbergen! Hier passen 3 à 4 jassen in. Goed om te weten: je kunt je kluisje gedurende de hele dag openen en sluiten zo vaak je wilt. Het is niet mogelijk om online een kluisje te reserveren."
     },
     "en": {
       "title": "Golden-GLU",

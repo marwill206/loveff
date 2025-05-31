@@ -20,7 +20,7 @@ function generateTimeLabels() {
   return times;
 }
 
-function Music({ day = "Zaterdag" }) {
+function Music({ day = "Zaterdag", lang ="nl" }) {
   const stages = schedule["LoveU Festival 2026"][day];
   const timeLabels = generateTimeLabels();
 
@@ -91,7 +91,7 @@ function Music({ day = "Zaterdag" }) {
                           width: `${(span / 59) * 100}%`,
                         }}
                       >
-                        {event.event}
+                        {event.event[lang]}
                         <div className="text-[0.7rem]">
                           {event.start} - {event.end}
                         </div>
