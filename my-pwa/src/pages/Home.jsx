@@ -1,11 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import homeData from "../assets/home.json";
 
-function Home({lang = "nl"}) {
-  
+function Home({ lang = "nl" }) {
   return (
     <div className="p-4 mb-18 dark:text-white text:black">
-      <div className="text-white bg-graytext w-20 text-center rounded-2xl"> <h2>>Home</h2></div>
+      <div className="text-white bg-graytext w-20 text-center rounded-2xl">
+        {" "}
+        <h2>>Home</h2>
+      </div>
       <div className="flex flex-col-reverse  justify-center items-center">
         <h1 className="w-80 text-center bg- mb-2 text-3xl font-bold rounded-4xl p-2 bg-accent">
           {homeData.homeTitle[lang]}
@@ -16,7 +18,7 @@ function Home({lang = "nl"}) {
           src="/imges/logo_black.svg"
           alt=""
         />
-         <img
+        <img
           className="w-40 pt-10 pb-5 hidden dark:flex rounded-2xl mb-2"
           src="/imges/logo_white.svg"
           alt=""
@@ -31,7 +33,10 @@ function Home({lang = "nl"}) {
         <div className=" gap-1  flex flex-row overflow-auto  w-90">
           <div className="gap-5 flex flex-row">
             {homeData.stages.map((stage) => (
-              <button className="flex flex-col w-55 h-65" key={stage.name[lang]}>
+              <button
+                className="flex flex-col w-55 h-65"
+                key={stage.name[lang]}
+              >
                 <img
                   className="w-55 h-55 object-cover rounded-xl"
                   src={stage.src}
@@ -50,20 +55,17 @@ function Home({lang = "nl"}) {
         <p className="font-semibold w-40 h-60 bg-footer text-xl  p-2 rounded-xl">
           {homeData.infoText[lang]}
         </p>
-        <Link
-        to="/music"
-        >
-        
-        <img
-          className="rounded-xl dark:hidden h-50 w-50"
-          src="/imges/schedule.png"
-          alt="schedule"
-        />
-        <img
-          className="rounded-xl hidden dark:flex h-50 w-50"
-          src="/imges/schedule_dark.png"
-          alt="schedule"
-        />
+        <Link to="/music">
+          <img
+            className="rounded-xl dark:hidden h-50 w-50"
+            src="/imges/schedule.png"
+            alt="schedule"
+          />
+          <img
+            className="rounded-xl hidden dark:flex h-50 w-50"
+            src="/imges/schedule_dark.png"
+            alt="schedule"
+          />
         </Link>
       </div>
     </div>
