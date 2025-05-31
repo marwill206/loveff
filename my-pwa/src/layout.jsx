@@ -7,11 +7,10 @@ import {
   LightIcon,
 } from "./components/icons";
 import { Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
-function Layout({ children }) {
+function Layout({ children, lang, setLang }) {
   const [isDark, setIsDark] = useState(false);
-  const [lang, setLang] = useState(localStorage.lang || "nl");
   const [showLangMenu, setShowLangMenu] = useState(false);
   const location = useLocation();
   const activePage = location.pathname;
@@ -41,10 +40,13 @@ function Layout({ children }) {
     setIsDark(dark);
   };
 
+  const langButtonRef = useRef();
+
   const handleLangSelect = (selectedLang) => {
     setLang(selectedLang);
     localStorage.lang = selectedLang;
     setShowLangMenu(false);
+    langButtonRef.current?.focus();
   };
 
   return (
@@ -59,6 +61,7 @@ function Layout({ children }) {
         </button>
         <div id="lang select" className="relative">
           <button
+            ref={langButtonRef}
             onClick={() => setShowLangMenu((v) => !v)}
             className="rounded-full"
             aria-haspopup="true"
@@ -75,11 +78,11 @@ function Layout({ children }) {
             id="lang-menu"
             className={`
       absolute -ml-1 mt-0.5 bg-accent rounded-b-full p-1 w-10 rounded-t-full gap-1 shadow-lg flex flex-col
-      transition-all duration-300 origin-top z-50
+      transition-all duration-450 origin-top z-50
       ${
         showLangMenu
           ? "scale-100 opacity-100 pointer-events-auto"
-          : "scale-95 opacity-0 pointer-events-none"
+          : "scale-0 opacity-0 pointer-events-none"
       }
     `}
             tabIndex={-1}

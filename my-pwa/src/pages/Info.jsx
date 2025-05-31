@@ -1,7 +1,7 @@
 import { useState } from "react";
 import infoData from "../assets/info.json";
 
-function Accordion({ title, children }) {
+function Accordion({ title, children,}) {
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -22,8 +22,8 @@ function Accordion({ title, children }) {
   );
 }
 
-function Info() {
-  const lang = "nl";
+function Info({lang = "nl"}) {
+  
   return (
     <div className="p-4 mb-14">
       <div>

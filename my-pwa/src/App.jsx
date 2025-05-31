@@ -4,15 +4,17 @@ import Info from "./pages/Info";
 import Music from "./pages/Music";
 import Location from "./pages/Location";
 import Home from "./pages/Home";
+import { useState } from "react";
 
 function App() {
+  const [lang, setLang] = useState(localStorage.lang || "nl");
   return (
-    <Layout>
+    <Layout lang={lang} setLang={setLang}>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/info" element={<Info />} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/location" element={<Location />} />
+        <Route path="/" element={<Home lang={lang} />} />
+        <Route path="/info" element={<Info lang={lang} />} />
+        <Route path="/music" element={<Music lang={lang} />} />
+        <Route path="/location" element={<Location lang={lang} />} />
       </Routes>
     </Layout>
   );
