@@ -4,13 +4,15 @@ import {
   MusicIcon,
   LocationIcon,
   DarkIcon,
-  LightIcon
+  LightIcon,
 } from "./components/icons";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Layout({ children }) {
   const [isDark, setIsDark] = useState(false);
+  const [lang, setLang] = useState(localStorage.lang || "nl");
+  const [showLangMenu, setShowLangMenu] = useState(false);
   const location = useLocation();
   const activePage = location.pathname;
   const navbar = [
@@ -39,6 +41,12 @@ function Layout({ children }) {
     setIsDark(dark);
   };
 
+  const handleLangSelect = (selectedLang) => {
+    setLang(selectedLang);
+    localStorage.lang = selectedLang;
+    setShowLangMenu(false);
+  };
+
   return (
     <div className="flex flex-col min-h-screen dark:bg-dark bg-gray-100 transition-colors ease-in-out">
       <header className=" text-white absolute right-0     justify-end z-1000 flex gap-2 m-3">
@@ -47,14 +55,43 @@ function Layout({ children }) {
           className=" rounded-full bg-black dark:bg-white text-black dark:text-white font-bold text-sm  w-9 h-9 flex justify-center items-center"
         >
           <DarkIcon className="fill-white dark:hidden  w-6 transition-all ease-in-out" />
-          <LightIcon className="f hidden dark:flex fill-info w-6 transition-all ease-in-out"/>
+          <LightIcon className="f hidden dark:flex fill-info w-6 transition-all ease-in-out" />
         </button>
-        <div className=" rounded h-full">
-          <img
-            className="w-8 h-8  rounded-full"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOkAAACgCAMAAADevrt1AAAAFVBMVEX///+uHCghRoulAADmysoAJH3KzdwUagNuAAAAqklEQVR4nO3PwRGDAAzAsACF/UfuCn3RO0eawJ5ji/l3wGuc9jjtcdrjtMdpj9Mepz1Oe5z2OO1x2uO0x2mP0x6nPU57nPY47XHa47THaY/THqc9Tnuc9sy1xXy2GAAAAAAAAAAAAAAA4HfPFnNvMecWTnuc9jjtcdrjtMdpj9Mepz1Oe5z2OO1x2uO0x2mP0x6nPU57nPY47XHa47THaY/THqc9Tnv2nH4BVOOeX8b66Q8AAAAASUVORK5CYII="
-            alt=""
-          />
+        <div id="lang select" className="  relative">
+          <button
+            onClick={() => setShowLangMenu((v) => !v)}
+            className=" rounded-full"
+          >
+            <img
+              className="w-8 h-8  rounded-full"
+              src={
+                lang === "nl"
+                ? "../imges/nl.png"
+                : "../imges/uk.png"
+              }
+              alt="lang-img"
+            />
+          </button>
+          {showLangMenu && (
+            <div className="absolute -ml-1 mt-0.5 bg-accent rounded-b-full p-1 w-10 rounded-t-full gap-1 shadow-lg flex flex-col">
+              
+              <div className="absolute -top-1.5 left-3 w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-accent"></div>
+              <button onClick={() => handleLangSelect("nl")} className="z-90">
+                <img
+                  className="w-8 h-8  rounded-full"
+                  src="../imges/nl.png"
+                  alt="nl-img"
+                />
+              </button>
+              <button onClick={() => handleLangSelect("en")}>
+                <img
+                  className="w-8 h-8 rounded-full"
+                  src="../imges/uk.png"
+                  alt="en-img"
+                />
+              </button>
+            </div>
+          )}
         </div>
       </header>
       <main className="">{children}</main>
