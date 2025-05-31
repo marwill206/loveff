@@ -32,8 +32,10 @@ function Info() {
         </h1>
       </div>
       {infoData.map((section) => (
-        <div key={section.section} className="mb-6 text-gray-700">
-          <h2 className="text-xl text-accent border-b-2 w-4/5 pb-2 font-bold mb-5">{section[lang].title}</h2>
+        <div key={section.section} className="mb-6  text-gray-700">
+          <h2 className="text-xl text-accent border-b-2 w-4/5 pb-2 font-bold mb-5">
+            {section[lang].title}
+          </h2>
           {Object.entries(section[lang])
             .filter(([key]) => key !== "title")
             .map(([key, value]) => {
@@ -42,9 +44,8 @@ function Info() {
                   <Accordion
                     key={key}
                     title={key.charAt(0).toUpperCase() + key.slice(1)}
-                    
                   >
-                    <p>{value}</p>
+                    <p className="dark:text-white">{value}</p>
                   </Accordion>
                 );
               }
@@ -56,8 +57,7 @@ function Info() {
                     title={key.charAt(0).toUpperCase() + key.slice(1)}
                   >
                     {Object.entries(value).map(([k, v]) => (
-                      <p key={k}
-                      >
+                      <p key={k} className="dark:text-white">
                         {k.charAt(0).toUpperCase() + k.slice(1)}: {v}
                       </p>
                     ))}
@@ -71,7 +71,7 @@ function Info() {
                     key={key + i}
                     title={item.vraag || item.question || `Item ${i + 1}`}
                   >
-                    <p>
+                    <p className="dark:text-white">
                       {item.antwoord || item.answer || JSON.stringify(item)}
                     </p>
                   </Accordion>

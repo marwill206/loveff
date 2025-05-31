@@ -20,7 +20,7 @@ function Home() {
     },
   ];
   return (
-    <div className="p-4 mb-18">
+    <div className="p-4 mb-18 dark:text-white text:black">
       <div className="text-white bg-graytext w-20 text-center rounded-2xl"> <h2>>Home</h2></div>
       <div className="flex flex-col-reverse  justify-center items-center">
         <h1 className="w-80 text-center bg- mb-2 text-3xl font-bold rounded-4xl p-2 bg-accent">
@@ -28,18 +28,23 @@ function Home() {
         </h1>
 
         <img
-          className="w-70  rounded-2xl mb-2"
-          src="/imges/whiteLogo.png"
+          className="w-40 pt-10 pb-5 dark:hidden  rounded-2xl mb-2"
+          src="/imges/logo_black.svg"
+          alt=""
+        />
+         <img
+          className="w-40 pt-10 pb-5 hidden dark:flex rounded-2xl mb-2"
+          src="/imges/logo_white.svg"
           alt=""
         />
       </div>
 
-      <div className="flex flex-col mt-20 mb-20 gap-5 justify-center items-center">
-        <h2 className="text-4xl bg-graytext p-3 flex items-center justify-center w-50 rounded-3xl text-black font-semibold bg-">
+      <div className="flex flex-col mt-20 mb-20 gap-7 justify-center items-center">
+        <h2 className="text-4xl bg-graytext p-3 flex items-center justify-center w-50 rounded-3xl  font-semibold bg-">
           Stages
         </h2>
 
-        <div className=" gap-1 flex flex-row overflow-auto  w-90">
+        <div className=" gap-1  flex flex-row overflow-auto  w-90">
           <div className="gap-5 flex flex-row">
             {stages.map((stage) => (
               <button className="flex flex-col w-55 h-65" key={stage.name}>
@@ -48,7 +53,7 @@ function Home() {
                   src={stage.src}
                   alt="stages"
                 />
-                <p className=" text-shadow-2xs flex ml-2 text-black font-bold text-3xl">
+                <p className=" dark:bg-graytext dark:items-center dark:justify-center dark:m-auto dark:rounded-xl dark:w-50 dark:p-1 dark:mt-1 text-shadow-2xs flex font-bold text-3xl">
                   {stage.name}
                 </p>
               </button>
@@ -66,8 +71,13 @@ function Home() {
         >
         
         <img
-          className="rounded-xl h-50 w-50"
+          className="rounded-xl dark:hidden h-50 w-50"
           src="/imges/schedule.png"
+          alt="schedule"
+        />
+        <img
+          className="rounded-xl hidden dark:flex h-50 w-50"
+          src="/imges/schedule_dark.png"
           alt="schedule"
         />
         </Link>

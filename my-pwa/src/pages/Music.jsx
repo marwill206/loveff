@@ -27,11 +27,11 @@ function Music({ day = "Zaterdag" }) {
   return (
     <div className="p-4 h-screen">
       <div>
-        <h1 className="text-white mb-6 bg-graytext w-20  text-center rounded-2xl">
+        <h1 className="text-white mb-6  bg-graytext w-23  text-center rounded-2xl">
           >Schedule
         </h1>
       </div>
-      <div className="flex h-5/6 items-center justify-center">
+      <div className=" dark:text-white h-5/6 items-center justify-center">
         <div className="overflow-x-auto">
           {/* header time */}
           <div className=" grid grid-cols-[100px_repeat(59,minmax(4rem,1fr))] text-xs text-center font-semibold mb-5">
@@ -63,7 +63,7 @@ function Music({ day = "Zaterdag" }) {
                       : stageName === "The Club"
                       ? "bg-info"
                       : "bg-footer"
-                  } rounded-xl text-sm font-bold flex items-center justify-center`}
+                  } rounded-xl text-lg font-bold flex items-center justify-center`}
                 >
                   {stageName}
                 </div>
@@ -85,14 +85,14 @@ function Music({ day = "Zaterdag" }) {
                             : stageName === "The Club"
                             ? "bg-info"
                             : "bg-footer"
-                        } rounded-2xl h-full text-white text-xs p-2 shadow-md overflow-hidden whitespace-nowrap`}
+                        } rounded-2xl h-full text-white text-[1rem] font-semibold p-2 shadow-md overflow-hidden whitespace-nowrap`}
                         style={{
                           left: `${(start / 59) * 100}%`,
                           width: `${(span / 59) * 100}%`,
                         }}
                       >
                         {event.event}
-                        <div className="text-[10px">
+                        <div className="text-[0.7rem]">
                           {event.start} - {event.end}
                         </div>
                       </div>
