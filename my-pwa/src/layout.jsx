@@ -55,43 +55,57 @@ function Layout({ children }) {
           className=" rounded-full bg-black dark:bg-white text-black dark:text-white font-bold text-sm  w-9 h-9 flex justify-center items-center"
         >
           <DarkIcon className="fill-white dark:hidden  w-6 transition-all ease-in-out" />
-          <LightIcon className="f hidden dark:flex fill-info w-6 transition-all ease-in-out" />
+          <LightIcon className=" hidden dark:flex fill-info w-6 transition-all ease-in-out" />
         </button>
-        <div id="lang select" className="  relative">
+        <div id="lang select" className="relative">
           <button
             onClick={() => setShowLangMenu((v) => !v)}
-            className=" rounded-full"
+            className="rounded-full"
+            aria-haspopup="true"
+            aria-expanded={showLangMenu}
+            aria-controls="lang-menu"
           >
             <img
-              className="w-8 h-8  rounded-full"
-              src={
-                lang === "nl"
-                ? "../imges/nl.png"
-                : "../imges/uk.png"
-              }
+              className="w-8 h-8 rounded-full"
+              src={lang === "nl" ? "../imges/nl.png" : "../imges/uk.png"}
               alt="lang-img"
             />
           </button>
-          {showLangMenu && (
-            <div className="absolute -ml-1 mt-0.5 bg-accent rounded-b-full p-1 w-10 rounded-t-full gap-1 shadow-lg flex flex-col">
-              
-              <div className="absolute -top-1.5 left-3 w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-accent"></div>
-              <button onClick={() => handleLangSelect("nl")} className="z-90">
-                <img
-                  className="w-8 h-8  rounded-full"
-                  src="../imges/nl.png"
-                  alt="nl-img"
-                />
-              </button>
-              <button onClick={() => handleLangSelect("en")}>
-                <img
-                  className="w-8 h-8 rounded-full"
-                  src="../imges/uk.png"
-                  alt="en-img"
-                />
-              </button>
-            </div>
-          )}
+          <div
+            id="lang-menu"
+            className={`
+      absolute -ml-1 mt-0.5 bg-accent rounded-b-full p-1 w-10 rounded-t-full gap-1 shadow-lg flex flex-col
+      transition-all duration-300 origin-top z-50
+      ${
+        showLangMenu
+          ? "scale-100 opacity-100 pointer-events-auto"
+          : "scale-95 opacity-0 pointer-events-none"
+      }
+    `}
+            tabIndex={-1}
+            role="menu"
+            aria-hidden={!showLangMenu}
+          >
+            <div className="absolute -top-1.5 left-3 w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-accent"></div>
+            <button
+              onClick={() => handleLangSelect("nl")}
+              className="z-90"
+              role="menuitem"
+            >
+              <img
+                className="w-8 h-8 rounded-full"
+                src="../imges/nl.png"
+                alt="nl-img"
+              />
+            </button>
+            <button onClick={() => handleLangSelect("en")} role="menuitem">
+              <img
+                className="w-8 h-8 rounded-full"
+                src="../imges/uk.png"
+                alt="en-img"
+              />
+            </button>
+          </div>
         </div>
       </header>
       <main className="">{children}</main>
