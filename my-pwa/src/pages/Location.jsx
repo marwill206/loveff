@@ -3,7 +3,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import markerData from "../assets/marker.json";
 
-function Location() {
+function Location({lang = "nl"}) {
   const center = [52.0755, 5.06];
   const delta = 0.005; // square area
   const bounds = [
@@ -35,7 +35,7 @@ function Location() {
         minZoom={17}
         maxZoom={22}
         className="h-full w-full mx-auto"
-        style={{ background: "#14532d" }} // Tailwind's bg-green-700 hex
+        style={{ background: "#14532d" }} 
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
       >
@@ -46,7 +46,7 @@ function Location() {
             position={marker.position}
             icon={createIcon(marker.img, marker.size)}
           >
-            <Popup>{marker.label}</Popup>
+            <Popup>{marker.label[lang]}</Popup>
           </Marker>
         ))}
       </MapContainer>

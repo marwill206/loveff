@@ -1,0 +1,26 @@
+{
+  "homeTitle": { "nl": "Welkom bij Love Festival", "en": "Welcome to Love Festival" },
+  "stagesTitle": { "nl": "Stages", "en": "Stages" },
+  "infoText": {
+    "nl": "Staat jouw favoriete Arties bij ons in het schema? Kijk nu:",
+    "en": "Is your favorite artist in our schedule? Check now:"
+  },
+  "stages": [
+    {
+      "name": { "nl": "Poton", "en": "Poton" },
+      "src": "https://gluwebdev.notion.site/image/attachment%3A045fb095-b9af-48fa-b6ac-d954b1aeb9b9%3Aimage.png?table=block&id=1f369bb8-092d-8056-93e2-cf8e459cb3fd&spaceId=0216a67a-859e-4730-996f-5d51b31fa395&width=1420&userId=&cache=v2"
+    },
+    {
+      "name": { "nl": "The Lake", "en": "The Lake" },
+      "src": "https://gluwebdev.notion.site/image/attachment%3A40baa6dd-0165-4e93-8e9d-e911eca8c21c%3Aimage.png?table=block&id=1f369bb8-092d-8014-87d4-e6d4ab0c724a&spaceId=0216a67a-859e-4730-996f-5d51b31fa395&width=1420&userId=&cache=v2"
+    },
+    {
+      "name": { "nl": "The Club", "en": "The Club" },
+      "src": "https://gluwebdev.notion.site/image/attachment%3Ab3d23197-84b2-40f3-ab6f-ad5ceabc32d3%3Aimage.png?table=block&id=1f369bb8-092d-80fc-b782-ecfdb945ae4a&spaceId=0216a67a-859e-4730-996f-5d51b31fa395&width=1420&userId=&cache=v2"
+    },
+    {
+      "name": { "nl": "Hanggar", "en": "Hanggar" },
+      "src": "https://gluwebdev.notion.site/image/attachment%3A741bbb50-6e77-4c96-8acf-307e402b664d%3Aimage.png?table=block&id=1f369bb8-092d-80c3-956b-eb2f4d571d08&spaceId=0216a67a-859e-4730-996f-5d51b31fa395&width=1420&userId=&cache=v2"
+    }
+  ]
+}
