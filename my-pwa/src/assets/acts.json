@@ -1,0 +1,167 @@
+[
+  {
+    "id": "armin-van-buuren",
+    "image": "armin.png",
+    "video": "https://www.youtube.com/watch?v=TxvpctgU_s8",
+    "en": {
+      "name": "Armin van Buuren",
+      "short": "trance icon",
+      "description": "Five-time “World’s No. 1 DJ” and trance icon, Armin delivers euphoric, high-energy sets that have headlined festivals from Tomorrowland to Ultra. His uplifting melodies and impeccable mixing keep crowds dancing for hours."
+    },
+    "nl": {
+      "name": "Armin van Buuren",
+      "short": "trance-icoon",
+      "description": "Vijf keer uitgeroepen tot 's werelds beste DJ. Armin zorgt voor euforische, energieke sets met uplifting melodieën. Zijn shows zijn festivalhoogtepunten van Tomorrowland tot Ultra."
+    }
+  },
+  {
+    "id": "martin-garrix",
+    "image": "martin.png",
+    "video": "https://www.youtube.com/watch?v=Zv1QV6lrc_Y",
+    "en": {
+      "name": "Martin Garrix",
+      "short": "EDM superstar",
+      "description": "Broke through as a teenager with “Animals,” Martin Garrix has become one of the biggest names in EDM. His anthemic big-room tracks and stadium-sized drops make him a festival favorite across Europe."
+    },
+    "nl": {
+      "name": "Martin Garrix",
+      "short": "EDM-superster",
+      "description": "Werd wereldberoemd als tiener met “Animals”. Martin is nu een van de grootste EDM-namen. Zijn hits en explosieve sets maken hem een publiekslieveling op elk festival."
+    }
+  },
+  {
+    "id": "kensington",
+    "image": "kensington.png",
+    "video": "https://www.youtube.com/watch?v=IH77eOyV95o",
+    "en": {
+      "name": "Kensington",
+      "short": "indie rock anthems",
+      "description": "Rotterdam-born indie rock quintet known for soaring choruses and driving guitar riffs. Hits like “Streets” and “Riddles” showcase their knack for arena-ready hooks and emotionally charged lyricism."
+    },
+    "nl": {
+      "name": "Kensington",
+      "short": "indierock-anthems",
+      "description": "Indierock-band uit Rotterdam met meeslepende refreinen en sterke gitaarriffs. Nummers als “Streets” en “Riddles” zijn festivalfavorieten."
+    }
+  },
+  {
+    "id": "within-temptation",
+    "image": "within.png",
+    "video": "https://www.youtube.com/watch?v=iQVei5C2N4E",
+    "en": {
+      "name": "Within Temptation",
+      "short": "symphonic metal pioneers",
+      "description": "Symphonic metal pioneers fronted by Sharon den Adel. Their cinematic soundscapes and operatic vocals translate into dramatic, visually stunning festival performances."
+    },
+    "nl": {
+      "name": "Within Temptation",
+      "short": "pioniers in symfonische metal",
+      "description": "Frontvrouw Sharon den Adel leidt deze symfonische metalband. Visueel indrukwekkend met filmische sferen en krachtige zang."
+    }
+  },
+  {
+    "id": "de-staat",
+    "image": "staat.png",
+    "video": "https://www.youtube.com/watch?v=0ttGgIQpAUc",
+    "en": {
+      "name": "De Staat",
+      "short": "experimental rock innovators",
+      "description": "Experimental rock outfit from Nijmegen, blending funky grooves with angular guitar work and theatrical stagecraft."
+    },
+    "nl": {
+      "name": "De Staat",
+      "short": "experimentele rock",
+      "description": "Nijmeegse rockband die funky grooves, strakke gitaren en een theatraal podium combineert tot een unieke show."
+    }
+  },
+  {
+    "id": "chefspecial",
+    "image": "chef.png",
+    "video": "https://www.youtube.com/watch?v=l3jRIr44lss",
+    "en": {
+      "name": "Chef'Special",
+      "short": "genre-blending funk-pop",
+      "description": "A four-piece from Haarlem mixing funk, pop, rock and hip-hop. Their upbeat sound makes for joyous, dance-floor-friendly live shows."
+    },
+    "nl": {
+      "name": "Chef'Special",
+      "short": "funky pop/rock",
+      "description": "Deze Haarlemse band mixt pop, rock, funk en hiphop. Hun energieke sound zorgt voor dansbare en feestelijke optredens."
+    }
+  },
+  {
+    "id": "navarone",
+    "image": "navarone.png",
+    "video": "https://www.youtube.com/watch?v=EvLpaCSnc4k",
+    "en": {
+      "name": "Navarone",
+      "short": "hard-hitting rock four-piece",
+      "description": "Utrecht’s hard-hitting rock four-piece, delivering riff-driven anthems and dynamic vocals. Live shows are known for raw intensity."
+    },
+    "nl": {
+      "name": "Navarone",
+      "short": "rockband uit Utrecht",
+      "description": "Utrechts viertal dat stevige rock brengt met meeslepende riffs en een energieke performance."
+    }
+  },
+  {
+    "id": "dotan",
+    "image": "dotan.png",
+    "video": "https://www.youtube.com/watch?v=FZEuqzW16Nw",
+    "en": {
+      "name": "Dotan",
+      "short": "folk-pop singer-songwriter",
+      "description": "Folk-pop singer-songwriter whose acoustic arrangements and heartfelt storytelling connect deeply on acoustic festival stages."
+    },
+    "nl": {
+      "name": "Dotan",
+      "short": "folk-pop zanger",
+      "description": "Singer-songwriter met akoestische liedjes en persoonlijke teksten die het goed doen op intieme festivalscènes."
+    }
+  },
+  {
+    "id": "eefje-de-visser",
+    "image": "eefje.png",
+    "video": "https://www.youtube.com/watch?v=6IlLJNmLDMg",
+    "en": {
+      "name": "Eefje de Visser",
+      "short": "atmospheric indie-pop",
+      "description": "Indie-pop artist crafting atmospheric, electronic-tinged songs with lush production and hypnotic vocals."
+    },
+    "nl": {
+      "name": "Eefje de Visser",
+      "short": "dromerige indie-pop",
+      "description": "Maakt sfeervolle, elektronische indiepop met dromerige zang en rijke producties."
+    }
+  },
+  {
+    "id": "froukje",
+    "image": "froukje.png",
+    "video": "https://www.youtube.com/watch?v=g4PlReX9e-E",
+    "en": {
+      "name": "Froukje",
+      "short": "candid pop songwriter",
+      "description": "Pop singer Froukje combines candid lyrics with catchy, synth-driven hooks—becoming a generational voice."
+    },
+    "nl": {
+      "name": "Froukje",
+      "short": "eerlijke popsongs",
+      "description": "Combineert eerlijke teksten met pakkende elektronische pop. Sinds 2021 een stem van haar generatie."
+    }
+  },
+  {
+    "id": "spinvis",
+    "image": "spinvis.png",
+    "video": "https://www.youtube.com/watch?v=F3ZTrGWSLf4",
+    "en": {
+      "name": "Spinvis",
+      "short": "Poetic lo-fi surrealist in pop form.",
+      "description": "Spinvis crafts poetic, collage-like songs blending lo-fi electronics and spoken word. His performances are surreal and intimate."
+    },
+    "nl": {
+      "name": "Spinvis",
+      "short": "poëtische lo-fi pop",
+      "description": "Spinvis maakt collages van geluid, lo-fi elektronica en gesproken teksten. Intiem, surrealistisch en typisch Nederlands."
+    }
+  }
+]

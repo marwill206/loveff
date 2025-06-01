@@ -1,7 +1,8 @@
 import { DivOverlay } from "leaflet";
 import schedule from "../assets/schedule.json";
 import { useEffect, useState } from "react";
-
+import EventModule from "../components/eventModule";
+import acts from "../assets/acts.json"
 
 function timeToIndex(time) {
   const [hours, minutes] = time.split(":").map(Number);
@@ -23,11 +24,20 @@ function generateTimeLabels() {
 }
 
 
+
 function Music({ lang = "nl" }) {
   const [day, setDay] = useState("Zaterdag");
   const stages = schedule["LoveU Festival 2026"][day];
+  const [selectedArtist, setSelectedArtist] = useState(null);
   const timeLabels = generateTimeLabels();
 
+const findArtist = (name) => 
+  acts.find(
+    (a) =>
+      a[lang].name.toLowerCase() ===name.toLowerCase() ||
+      a.nl.name.toLowerCase() === name.toLowerCase() ||
+        a.en.name.toLowerCase() === name.toLowerCase()
+  )
 
 
   return (
@@ -93,7 +103,7 @@ function Music({ lang = "nl" }) {
                     const end = timeToIndex(event.end);
                     const span = end - start;
                     return (
-                      <div
+                      <button
                         key={idx}
                         className={`absolute ${
                           stageName === "Poton"
@@ -108,12 +118,17 @@ function Music({ lang = "nl" }) {
                           left: `${(start / 59) * 100}%`,
                           width: `${(span / 59) * 100}%`,
                         }}
+
+                        onClick={() => {
+                          const artist = findArtist(event.event[lang]);
+                          setSelectedArtist(artist || null)
+                        }}
                       >
                         {event.event[lang]}
                         <div className="text-[0.7rem]">
                           {event.start} - {event.end}
                         </div>
-                      </div>
+                      </button>
                     );
                   })}
                   <div
@@ -127,6 +142,13 @@ function Music({ lang = "nl" }) {
           </div>
         </div>
       </div>
+      <EventModule
+      artist={selectedArtist}
+      lang={lang}
+      onClose={() => setSelectedArtist(null)}
+      />
+
+      
     </div>
   );
 }

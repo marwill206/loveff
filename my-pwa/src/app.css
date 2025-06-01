@@ -8,6 +8,7 @@
   --color-info: #E3B505;
   --color-back: #e5e5e5;
   --color-dark: #1e1c1c;
+  --color-lightTextM: #7a7a7a;
 }
 
 @layer utilities {
@@ -16,5 +17,7 @@
       0 -2px 4px -2px rgba(0, 0, 0, 0.1);
   }
 }
+
+
 
 @custom-variant dark (&:where(.dark, .dark *));
