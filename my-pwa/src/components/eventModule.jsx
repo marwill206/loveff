@@ -8,7 +8,7 @@ function EventModal({artist, lang, onClose}) {
   useEffect(() => {
     if (artist) {
       setHidden(false);
-      setTimeout(() => setVisible(true), 10); // allow DOM paint
+      setTimeout(() => setVisible(true), 10); 
     }
   }, [artist]);
 
@@ -17,7 +17,7 @@ function EventModal({artist, lang, onClose}) {
     setTimeout(() => {
       setHidden(true);
       onClose();
-    }, 300); // match your fade-out duration
+    }, 300); 
   };
 
   if (hidden) return null;
