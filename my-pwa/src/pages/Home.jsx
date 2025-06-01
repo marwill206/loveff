@@ -5,7 +5,6 @@ function Home({ lang = "nl" }) {
   return (
     <div className="p-4 mb-18 dark:text-white text:black">
       <div className="text-white bg-graytext w-20 text-center rounded-2xl">
-        {" "}
         <h2>>Home</h2>
       </div>
       <div className="flex flex-col-reverse  justify-center items-center">

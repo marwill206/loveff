@@ -1,5 +1,7 @@
 import { DivOverlay } from "leaflet";
 import schedule from "../assets/schedule.json";
+import { useEffect, useState } from "react";
+
 
 function timeToIndex(time) {
   const [hours, minutes] = time.split(":").map(Number);
@@ -20,16 +22,32 @@ function generateTimeLabels() {
   return times;
 }
 
-function Music({ day = "Zaterdag", lang ="nl" }) {
+
+function Music({ lang = "nl" }) {
+  const [day, setDay] = useState("Zaterdag");
   const stages = schedule["LoveU Festival 2026"][day];
   const timeLabels = generateTimeLabels();
+
+
 
   return (
     <div className="p-4 h-screen">
       <div>
-        <h1 className="text-white mb-6  bg-graytext w-23  text-center rounded-2xl">
+        <h1 className="text-white mb-2  bg-graytext w-23  text-center rounded-2xl">
           >Schedule
         </h1>
+      </div>
+      <div className="flex gap-4">
+        <button 
+        onClick={() => setDay("Zaterdag")}
+        className={`text-white transition-colors ease-in-out mb-2  ${day === "Zaterdag" ? "bg-footer" : "bg-graytext"} w-23  text-center rounded-2xl`}>
+          {schedule.dayText.Zaterdag[lang]}
+        </button>
+        <button 
+        onClick={() => setDay("Zondag")}
+        className={`text-white transition-colors ease-in-out mb-2  ${day === "Zondag" ? "bg-info" : "bg-graytext"} w-23  text-center rounded-2xl`}>
+          {schedule.dayText.Zondag[lang]}
+        </button>
       </div>
       <div className=" dark:text-white h-5/6 items-center justify-center">
         <div className="overflow-x-auto">
