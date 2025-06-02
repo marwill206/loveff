@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { YouTube } from "./icons";
 
 function EventModal({ artist, lang, onClose }) {
   const [visible, setVisible] = useState(false);
@@ -40,14 +41,15 @@ function EventModal({ artist, lang, onClose }) {
         </button>
         <h2 className="text-lg font-bold">{artist[lang].name}</h2>
         <h3 className="mb-2">{artist[lang].short}</h3>
+        <img
+          className="w-40  rounded-xl"
+          src={`/imges/${artist.image}`}
+          alt="artist-img"
+        />
         <a href={artist.video} target="_blank" rel="noopener noreferrer">
-          <img
-            className="w-40  rounded-xl"
-            src={`/imges/${artist.image}`}
-            alt="artist-img"
-          />
+          <YouTube className="w-10 fill-dark dark:fill-white "/>
         </a>
-        <p className="text-sm mt-2">{artist[lang].description}</p>
+        <p className="text-sm m">{artist[lang].description}</p>
       </div>
     </div>
   );
