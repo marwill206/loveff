@@ -51,7 +51,8 @@ function Layout({ children, lang, setLang }) {
 
   return (
     <div className="flex flex-col min-h-screen dark:bg-dark bg-gray-100 transition-colors ease-in-out">
-      <header className=" text-white absolute right-0     justify-end z-1000 flex gap-2 m-3">
+      <header 
+      className=" text-white absolute right-0     justify-end z-1000 flex gap-2 m-3">
         <button
           onClick={toggleDarkMode}
           className=" rounded-full bg-black dark:bg-white text-black dark:text-white font-bold text-sm  w-9 h-9 flex justify-center items-center"
