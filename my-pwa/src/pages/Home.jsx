@@ -47,7 +47,7 @@ function Home({ lang = "nl" }) {
                   <p className="dark:bg-graytext dark:items-center dark:justify-center dark:m-auto dark:rounded-xl dark:w-50 dark:p-1 dark:mt-1 text-shadow-2xs flex font-bold text-3xl">
                     {stage.name[lang]}
                   </p>
-                  {/* Overlay */}
+
                   <div
                     onClick={(e) => {
                       e.stopPropagation();
@@ -69,11 +69,17 @@ function Home({ lang = "nl" }) {
                     }}
                   >
                     <div className="flex justify-between items-center w-full px-2 mb-2">
-                      <span className="text-center w-full font-bold">{stage.name[lang]}</span>
+                      <span className="text-center w-full font-bold">
+                        {stage.name[lang]}
+                      </span>
                     </div>
                     <div>
                       <p className="">
-                        More info about {stage.name[lang]} goes here.
+                        {stage.news &&
+                        stage.news[lang] &&
+                        stage.news[lang].trim() !== ""
+                          ? stage.news[lang]
+                          : `${homeData.nothing[lang]}`}
                       </p>
                     </div>
                   </div>
@@ -88,7 +94,7 @@ function Home({ lang = "nl" }) {
         <p className="font-semibold w-40 h-60 bg-footer text-xl  p-2 rounded-xl">
           {homeData.infoText[lang]}
         </p>
-        <Link to="/music">
+        <Link to="/dist/music">
           <img
             className="rounded-xl dark:hidden h-50 w-50"
             src="/dist/imges/schedule.png"

@@ -1,6 +1,6 @@
 {
   "homeTitle": { "nl": "Welkom bij Love Festival", "en": "Welcome to Love Festival" },
-  "stagesTitle": { "nl": "New", "en": "New" },
+  "stagesTitle": { "nl": "Nieuws", "en": "News" },
   "infoText": {
     "nl": "Staat jouw favoriete Arties bij ons in het schema? Kijk nu:",
     "en": "Is your favorite artist in our schedule? Check now:"
@@ -8,19 +8,27 @@
   "stages": [
     {
       "name": { "nl": "Poton", "en": "Poton" },
-      "src": "/dist/imges/ponton.png"
+      "src": "/dist/imges/ponton.png",
+      "news": {"nl":"Armin Van buren Vertraagd in plaats van 10:00 naar 10:15","en": "Armin van Buren is delayed from 10:00 to 10:15"}
     },
     {
       "name": { "nl": "The Lake", "en": "The Lake" },
-      "src": "/dist/imges/lake.png"
+      "src": "/dist/imges/lake.png",
+      "news": {}
     },
     {
       "name": { "nl": "The Club", "en": "The Club" },
-      "src": "/dist/imges/club.png"
+      "src": "/dist/imges/club.png",
+      "news": {}
     },
     {
       "name": { "nl": "Hanggar", "en": "Hanggar" },
-      "src": "/dist/imges/hangar.png"
+      "src": "/dist/imges/hangar.png",
+      "news": {}
     }
-  ]
+  ],
+
+  "nothing": {"nl": "Er is geen nieuws hier.", "en": "There is no news here"}
+
+  
 }
