@@ -15,12 +15,12 @@ function Layout({ children, lang, setLang }) {
   const location = useLocation();
   const activePage = location.pathname;
   const navbar = [
-    { name: "Home", path: "/", icon: <HomeIcon className="w-8 h-8" /> },
-    { name: "Info", path: "/info", icon: <InfoIcon className="w-8 h-8" /> },
-    { name: "Music", path: "/music", icon: <MusicIcon className="w-8 h-8" /> },
+    { name: "Home", path: "/dist/", icon: <HomeIcon className="w-8 h-8" /> },
+    { name: "Info", path: "/dist/info", icon: <InfoIcon className="w-8 h-8" /> },
+    { name: "Music", path: "/dist/music", icon: <MusicIcon className="w-8 h-8" /> },
     {
       name: "Location",
-      path: "/location",
+      path: "/dist/location",
       icon: <LocationIcon className="w-8 h-8" />,
     },
   ];
@@ -71,7 +71,7 @@ function Layout({ children, lang, setLang }) {
           >
             <img
               className="w-8 h-8 rounded-full"
-              src={lang === "nl" ? "../imges/nl.png" : "../imges/uk.png"}
+              src={lang === "nl" ? "dist/../imges/nl.png" : "dist/../imges/uk.png"}
               alt="lang-img"
             />
           </button>
@@ -98,14 +98,14 @@ function Layout({ children, lang, setLang }) {
             >
               <img
                 className="w-8 h-8 rounded-full"
-                src="../imges/nl.png"
+                src="dist/../imges/nl.png"
                 alt="nl-img"
               />
             </button>
             <button onClick={() => handleLangSelect("en")} role="menuitem">
               <img
                 className="w-8 h-8 rounded-full"
-                src="../imges/uk.png"
+                src="dist/../imges/uk.png"
                 alt="en-img"
               />
             </button>

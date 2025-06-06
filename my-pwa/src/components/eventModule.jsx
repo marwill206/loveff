@@ -43,7 +43,7 @@ function EventModal({ artist, lang, onClose }) {
         <h3 className="mb-2">{artist[lang].short}</h3>
         <img
           className="w-40  rounded-xl"
-          src={`/imges/${artist.image}`}
+          src={`/dist/imges/${artist.image}`}
           alt="artist-img"
         />
         <a href={artist.video} target="_blank" rel="noopener noreferrer">

@@ -11,10 +11,10 @@ function App() {
   return (
     <Layout lang={lang} setLang={setLang}>
       <Routes>
-        <Route path="/" element={<Home lang={lang} />} />
-        <Route path="/info" element={<Info lang={lang} />} />
-        <Route path="/music" element={<Music lang={lang} />} />
-        <Route path="/location" element={<Location lang={lang} />} />
+        <Route path="/dist/" element={<Home lang={lang} />} />
+        <Route path="/dist/info" element={<Info lang={lang} />} />
+        <Route path="/dist/music" element={<Music lang={lang} />} />
+        <Route path="/dist/location" element={<Location lang={lang} />} />
       </Routes>
     </Layout>
   );

@@ -1,9 +1,9 @@
-import { DivOverlay } from "leaflet";
+
 import schedule from "../assets/schedule.json";
-import { useEffect, useState, useRef } from "react";
+import {  useState, useRef } from "react";
 import EventModule from "../components/eventModule";
 import acts from "../assets/acts.json";
-import GenreFilter from "../components/GenreFilter";
+
 
 function timeToIndex(time) {
   const [hours, minutes] = time.split(":").map(Number);

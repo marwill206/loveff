@@ -19,7 +19,7 @@ function Location({lang = "nl"}) {
     // "small" or default stays [40, 40]
 
     return L.icon({
-      iconUrl: `/imges/${img}`,
+      iconUrl: `/dist/imges/${img}`,
       iconSize,
       iconAnchor: [iconSize[0] / 2, iconSize[1] / 2],
       popupAnchor: [0, -iconSize[1] / 2],
@@ -39,7 +39,7 @@ function Location({lang = "nl"}) {
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
       >
-        <ImageOverlay url="/imges/kaart.svg" bounds={bounds} />
+        <ImageOverlay url="/dist/imges/kaart.svg" bounds={bounds} />
         {markerData.map((marker, idx) => (
           <Marker
             key={idx}

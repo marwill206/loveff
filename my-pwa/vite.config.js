@@ -3,9 +3,8 @@ import react from "@vitejs/plugin-react";
 
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from "vite-plugin-pwa";
-
-
 export default defineConfig({
+  base: "/dist/",
   plugins: [
     react(),
     tailwindcss(),
@@ -21,17 +20,21 @@ export default defineConfig({
         description: "LoveU Festival App",
         icons: [
           {
-            src: "/imges/logo_white.svg",
+            src: "/dist/imges/logo_white.svg",
             sizes: "192x192",
             type: "image/svg+xml"
           },
           {
-            src: "/imges/logo_white.svg",
+            src: "/dist/imges/logo_white.svg",
             sizes: "512x512",
             type: "image/svg+xml"
           }
         ]
-      }
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,jpeg,webp,ico,json}'],
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // 10 MB
+      },
     })
   ],
 });

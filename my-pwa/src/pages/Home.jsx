@@ -1,7 +1,10 @@
-import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import homeData from "../assets/home.json";
 
 function Home({ lang = "nl" }) {
+  const [selectedStage, setSelectedStage] = useState(null);
+
   return (
     <div className="p-4 mb-18 dark:text-white text:black">
       <div className="text-white bg-graytext w-20 text-center rounded-2xl">
@@ -14,12 +17,12 @@ function Home({ lang = "nl" }) {
 
         <img
           className="w-40 pt-10 pb-5 dark:hidden  rounded-2xl mb-2"
-          src="/imges/logo_black.svg"
+          src="/dist/imges/logo_black.svg"
           alt=""
         />
         <img
           className="w-40 pt-10 pb-5 hidden dark:flex rounded-2xl mb-2"
-          src="/imges/logo_white.svg"
+          src="/dist/imges/logo_white.svg"
           alt=""
         />
       </div>
@@ -28,23 +31,54 @@ function Home({ lang = "nl" }) {
         <h2 className="text-4xl bg-graytext p-3 flex items-center justify-center w-50 rounded-3xl  font-semibold bg-">
           {homeData.stagesTitle[lang]}
         </h2>
-
-        <div className=" gap-1  flex flex-row overflow-auto  w-90">
-          <div className="gap-5 flex flex-row">
-            {homeData.stages.map((stage) => (
-              <button
-                className="flex flex-col w-55 h-65"
-                key={stage.name[lang]}
-              >
-                <img
-                  className="w-55 h-55 object-cover rounded-xl"
-                  src={stage.src}
-                  alt="stages"
-                />
-                <p className=" dark:bg-graytext dark:items-center dark:justify-center dark:m-auto dark:rounded-xl dark:w-50 dark:p-1 dark:mt-1 text-shadow-2xs flex font-bold text-3xl">
-                  {stage.name[lang]}
-                </p>
-              </button>
+        <div className="gap-1 flex flex-row overflow-auto w-90">
+          <div className="gap-5 flex flex-row relative">
+            {homeData.stages.map((stage, idx) => (
+              <div key={stage.name[lang]} className="relative">
+                <button
+                  className="flex flex-col w-55 h-65"
+                  onClick={() => setSelectedStage(idx)}
+                >
+                  <img
+                    className="w-55 h-55 object-cover rounded-xl"
+                    src={stage.src}
+                    alt="stages"
+                  />
+                  <p className="dark:bg-graytext dark:items-center dark:justify-center dark:m-auto dark:rounded-xl dark:w-50 dark:p-1 dark:mt-1 text-shadow-2xs flex font-bold text-3xl">
+                    {stage.name[lang]}
+                  </p>
+                  {/* Overlay */}
+                  <div
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedStage(null);
+                    }}
+                    aria-label="Close"
+                    className={`
+                      absolute top-0 text-white  left-0 w-full h-55 rounded-xl flex flex-col justify-center items-center z-10
+                      transition-all duration-300
+                      ${
+                        selectedStage === idx
+                          ? "opacity-90 translate-y-0 pointer-events-auto bg-black"
+                          : "opacity-0 -translate-y-10 pointer-events-none bg-black/0"
+                      }
+                    `}
+                    style={{
+                      backdropFilter:
+                        selectedStage === idx ? "blur(2px)" : "none",
+                    }}
+                  >
+                    <div className="flex justify-between items-center w-full px-2 mb-2">
+                      <span className="text-center w-full font-bold">{stage.name[lang]}</span>
+                    </div>
+                    <div>
+                      <p className="">
+                        More info about {stage.name[lang]} goes here.
+                      </p>
+                    </div>
+                  </div>
+                </button>
+              </div>
             ))}
           </div>
         </div>
@@ -57,12 +91,12 @@ function Home({ lang = "nl" }) {
         <Link to="/music">
           <img
             className="rounded-xl dark:hidden h-50 w-50"
-            src="/imges/schedule.png"
+            src="/dist/imges/schedule.png"
             alt="schedule"
           />
           <img
             className="rounded-xl hidden dark:flex h-50 w-50"
-            src="/imges/schedule_dark.png"
+            src="/dist/imges/schedule_dark.png"
             alt="schedule"
           />
         </Link>
