@@ -1,4 +1,4 @@
-Instalatie LoveFF app:
+//Instalatie LoveFF app:
 
 Stap 1 
 open de website: https://u230074.gluwebsite.nl/dist/
@@ -10,7 +10,7 @@ Daarna klik op de + en kies dan startscherm
 stap 2 download  het op (iphone)
 open safari zoek de link op die staat bij stap 1 klik dan op de share knop scroll dan naar beneden tot dat je zet op beginscherm ziet (de vierkant met de plus erin) en klik daar dan op.
 
-// downlaud van git
+// downlaud van git:
 https://github.com/marwill206/loveff
 stap 1 clone het project op git.
 
